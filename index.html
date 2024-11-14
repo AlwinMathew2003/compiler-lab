@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>CSL 411 Compiler Lab - Program List</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="csl-411-compiler-lab---program-list">CSL 411 Compiler Lab - Program List</h1>
+<h3 id="ktu-2019-scheme"><a href="https://ktu.edu.in/"><strong>KTU 2019 SCHEME</strong></a></h3>
+<h2 id="jyothi-engineering-college-cheruthuruthy-thrissur-kerala"><a href="https://jecc.ac.in/">Jyothi Engineering College, Cheruthuruthy, Thrissur, Kerala</a></h2>
+<h3 id="department-of-computer-science--engineering"><a href="https://jecc.ac.in/departments/computer_science_engineering">Department of Computer Science &amp; Engineering</a></h3>
+<h4 id="2021---2025-a-batch">2021 - 2025 (A) Batch</h4>
+<h5 id="august-2024---november-2024">August 2024 - November 2024</h5>
+<hr>
+<h2 id=""><a href="https://github.com/AlwinMathew2003/compiler_lab"><img src="https://img.shields.io/badge/Source%20Code-Download_Link-brightgreen" alt=""></a></h2>
+<p><a href="mailto:alwinmathew.cse21@jecc.ac.in"><img src="https://img.shields.io/badge/Programs%20%26%20Viva%20by-%20Alwin%20Mathew-orange" alt=""></a></p>
+<h3 id="install-flex-and-bisonlinux-os">Install Flex and Bison(Linux OS)</h3>
+<p>You can install Flex (a fast lexical analyzer) and Bison (a parser generator) using the following command:</p>
+<pre><code class="language-bash">
+sudo apt install flex bison
+</code></pre>
+<h3 id="verify-installation">Verify Installation</h3>
+<p>After the installation is complete, you can verify that Flex and Bison have been installed correctly by checking their versions:</p>
+<pre><code class="language-bash">
+flex --version
+bison --version
+</code></pre>
+<h3 id="how-to-compile-and-run-lex-program">How to Compile and Run Lex Program</h3>
+<ol>
+<li>
+<p><strong>Save the code</strong> to a file, e.g., <code>example.l</code>.</p>
+</li>
+<li>
+<p><strong>Compile</strong> the Lex program using Flex and GCC:</p>
+<pre><code class="language-bash">
+lex file.l
+gcc lex.yy.c -lfl
+</code></pre>
+</li>
+<li>
+<p><strong>Run the executable</strong>:</p>
+<pre><code class="language-bash">
+./a.out
+</code></pre>
+</li>
+</ol>
+<h3 id="how-to-compiler-and-run-lex-and-yacc-program">How to Compiler and Run Lex and Yacc Program</h3>
+<ol>
+<li>
+<p><strong>Save the lex code</strong> to a file e.g., <code>example.l</code> and yacc code to another file e.g., <code>example.y</code></p>
+</li>
+<li>
+<p><strong>Compile the Lex program</strong> using Flex:</p>
+<pre><code class="language-bash">lex example.l
+</code></pre>
+</li>
+<li>
+<p><strong>Compiler the Yacc program</strong> using Bison.</p>
+<pre><code class="language-bash">yacc -dy example.y
+</code></pre>
+</li>
+<li>
+<p><strong>Run the executable</strong></p>
+<pre><code class="language-bash">gcc lex.yy.c y.tab.c -lfl
+</code></pre>
+</li>
+</ol>
+<hr>
+<p><a href="https://github.com/AlwinMathew2003/compiler_lab/tree/main/cycle-1"><img src="https://img.shields.io/badge/Cycle-1-blue" alt=""></a></p>
+<ol>
+<li>LEX Program to count the number of lines, words and
+characters in an input and input from a file.</li>
+<li>Lex program to Identify and Count Positive and Negative
+Numbers</li>
+<li>LEX Program to count the number of vowels and consonants</li>
+<li>LEX Program to remove space, tab or newline</li>
+<li>Lex program to find the length of a string</li>
+<li>To Implement a lexical analyzer in C.</li>
+<li>To write a program for implementing a Lexical analyser using
+LEX tool</li>
+<li>Generate a YACC specification to recognize a valid identifier
+which starts with a letter followed by any number of letters or
+digits.</li>
+<li>Generate a YACC specification to recognize a valid arithmetic
+expression that uses operators +, – , *,/ and parenthesis.</li>
+<li>Implementation of Calculator using LEX and YACC</li>
+<li>Write a LEX Program to convert the substring abc to ABC
+from the given input string</li>
+</ol>
+<hr>
+<p><a href="https://github.com/AlwinMathew2003/compiler_lab/tree/main/cycle-2"><img src="https://img.shields.io/badge/Cycle-2-blue" alt=""></a></p>
+<ol start="12">
+<li>Implementation of DFA</li>
+<li>Implement Intermediate code generation for simple
+expressions</li>
+<li>Implement Backend of the Compiler</li>
+</ol>
+<hr>
+<p><a href="https://github.com/AlwinMathew2003/compiler_lab/tree/main/printouts"><img src="https://img.shields.io/badge/Program-Prinouts-purple" alt=""></a></p>
+<ol>
+<li>Question for Internal and External Lab Exam.</li>
+<li>Programs and outputs printouts</li>
+</ol>
+<hr>
+<h3 id="other-labs"><strong>OTHER LABS</strong></h3>
+<p><a href="https://clab.netlify.app/"><strong>C Lab</strong></a>  <a href="https://oopslab.netlify.app/"><strong>Java Lab</strong></a>  <a href="https://oslabc.netlify.app/"><strong>Operating System Lab</strong></a>  <a href="https://dsalab.netlify.app/"><strong>Data Structure Lab</strong></a>.  <a href="https://masm-8086.netlify.app/"><strong>System Software and Microprocessor Lab</strong></a></p>
+
+            
+            
+        </body>
+        </html>
