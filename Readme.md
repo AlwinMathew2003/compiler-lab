@@ -9,58 +9,39 @@
 
 [![](https://img.shields.io/badge/Programs%20%26%20Viva%20by-%20Alwin%20Mathew-orange)](mailto:alwinmathew.cse21@jecc.ac.in)
 
-### Install Flex and Bison(Linux OS)
-
+## Install Flex and Bison(Linux OS)
 You can install Flex (a fast lexical analyzer) and Bison (a parser generator) using the following command:
-
 ```bash
-
 sudo apt install flex bison
 ```
-
-### Verify Installation
-
+## Verify Installation
 After the installation is complete, you can verify that Flex and Bison have been installed correctly by checking their versions:
-
 ```bash
-
 flex --version
 bison --version
 ```
-### How to Compile and Run Lex Program
-
+## How to Compile and Run Lex Program
 1. **Save the code** to a file, e.g., `example.l`.
-2. **Compile** the Lex program using Flex and GCC:
-    
-    ```bash
-    
+2. **Compile** the Lex program using Flex and GCC:  
+    ```bash  
     lex file.l
     gcc lex.yy.c -lfl
     ```
-    
 3. **Run the executable**:
-    
     ```bash
-    
     ./a.out
     ```
-### How to Compiler and Run Lex and Yacc Program
-
+## How to Compiler and Run Lex and Yacc Program
 1. **Save the lex code** to a file e.g., `example.l` and yacc code to another file e.g., `example.y`
 2. **Compile the Lex program** using Flex:
-    
     ```bash
     lex example.l
     ```
-    
 3. **Compiler the Yacc program** using Bison.
-    
     ```bash
     yacc -dy example.y
     ```
-    
 4. **Run the executable**
-    
     ```bash
     gcc lex.yy.c y.tab.c -lfl
     ```
