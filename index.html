@@ -147,54 +147,36 @@
 <hr>
 <h2 id=""><a href="https://github.com/AlwinMathew2003/compiler_lab"><img src="https://img.shields.io/badge/Source%20Code-Download_Link-brightgreen" alt=""></a></h2>
 <p><a href="mailto:alwinmathew.cse21@jecc.ac.in"><img src="https://img.shields.io/badge/Programs%20%26%20Viva%20by-%20Alwin%20Mathew-orange" alt=""></a></p>
-<h3 id="install-flex-and-bisonlinux-os">Install Flex and Bison(Linux OS)</h3>
+<h2 id="install-flex-and-bisonlinux-os">Install Flex and Bison(Linux OS)</h2>
 <p>You can install Flex (a fast lexical analyzer) and Bison (a parser generator) using the following command:</p>
-<pre><code class="language-bash">
-sudo apt install flex bison
+<pre><code class="language-bash">sudo apt install flex bison
 </code></pre>
-<h3 id="verify-installation">Verify Installation</h3>
+<h2 id="verify-installation">Verify Installation</h2>
 <p>After the installation is complete, you can verify that Flex and Bison have been installed correctly by checking their versions:</p>
-<pre><code class="language-bash">
-flex --version
+<pre><code class="language-bash">flex --version
 bison --version
 </code></pre>
-<h3 id="how-to-compile-and-run-lex-program">How to Compile and Run Lex Program</h3>
+<h2 id="how-to-compile-and-run-lex-program">How to Compile and Run Lex Program</h2>
 <ol>
-<li>
-<p><strong>Save the code</strong> to a file, e.g., <code>example.l</code>.</p>
-</li>
-<li>
-<p><strong>Compile</strong> the Lex program using Flex and GCC:</p>
-<pre><code class="language-bash">
-lex file.l
+<li><strong>Save the code</strong> to a file, e.g., <code>example.l</code>.</li>
+<li><strong>Compile</strong> the Lex program using Flex and GCC:<pre><code class="language-bash">lex file.l
 gcc lex.yy.c -lfl
 </code></pre>
 </li>
-<li>
-<p><strong>Run the executable</strong>:</p>
-<pre><code class="language-bash">
-./a.out
+<li><strong>Run the executable</strong>:<pre><code class="language-bash">./a.out
 </code></pre>
 </li>
 </ol>
-<h3 id="how-to-compiler-and-run-lex-and-yacc-program">How to Compiler and Run Lex and Yacc Program</h3>
+<h2 id="how-to-compiler-and-run-lex-and-yacc-program">How to Compiler and Run Lex and Yacc Program</h2>
 <ol>
-<li>
-<p><strong>Save the lex code</strong> to a file e.g., <code>example.l</code> and yacc code to another file e.g., <code>example.y</code></p>
-</li>
-<li>
-<p><strong>Compile the Lex program</strong> using Flex:</p>
-<pre><code class="language-bash">lex example.l
+<li><strong>Save the lex code</strong> to a file e.g., <code>example.l</code> and yacc code to another file e.g., <code>example.y</code></li>
+<li><strong>Compile the Lex program</strong> using Flex:<pre><code class="language-bash">lex example.l
 </code></pre>
 </li>
-<li>
-<p><strong>Compiler the Yacc program</strong> using Bison.</p>
-<pre><code class="language-bash">yacc -dy example.y
+<li><strong>Compiler the Yacc program</strong> using Bison.<pre><code class="language-bash">yacc -dy example.y
 </code></pre>
 </li>
-<li>
-<p><strong>Run the executable</strong></p>
-<pre><code class="language-bash">gcc lex.yy.c y.tab.c -lfl
+<li><strong>Run the executable</strong><pre><code class="language-bash">gcc lex.yy.c y.tab.c -lfl
 </code></pre>
 </li>
 </ol>
